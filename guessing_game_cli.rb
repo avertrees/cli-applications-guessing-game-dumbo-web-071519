@@ -19,3 +19,10 @@ def generate_response(input, number)
   else
     puts "Sorry! The computer guessed #{number}"
 end
+
+def run
+  prompt_user
+  number = generate_number
+  guess = get_user_input
+  generate_response(guess, number)
+end
