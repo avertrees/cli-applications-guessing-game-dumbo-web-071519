@@ -11,8 +11,11 @@ def get_user_input
   gets.chomp
 end
 
-def compare_numbers(num1, num2)
-  if num1 == num2
+def generate_response(input, number)
+  if input == number
     puts "You guessed the correct number!"
-  else 
+  elsif input == "exit"
+    puts "Goodbye!"
+  else
+    puts "Sorry! The computer guessed #{number}"
 end
