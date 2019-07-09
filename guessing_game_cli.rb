@@ -18,6 +18,7 @@ def generate_response(input, number)
     puts "Goodbye!"
   else
     puts "Sorry! The computer guessed #{number}"
+  end
 end
 
 def run
