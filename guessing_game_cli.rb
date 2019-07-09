@@ -12,7 +12,7 @@ def get_user_input
 end
 
 def run
-  number = generate_number
+  number = rand(6) + 1
   promp_user
   input = get_user_input
   if input == number
