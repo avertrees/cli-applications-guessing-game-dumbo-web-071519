@@ -12,9 +12,9 @@ def run_guessing_game
   number = generate_number
   
  
-  input = gets.chomp
+  input = gets.chomp.to_i
   
-  if number == input.to_i
+  if number == input
     puts "You guessed the correct number!"
   elsif input == "exit"
     puts "Goodbye!"
