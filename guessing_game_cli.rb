@@ -12,3 +12,5 @@ def ruby_guessing_game
     puts "Sorry! The computer guessed #{number}"
   end
 end
+
+ruby_guessing_game
