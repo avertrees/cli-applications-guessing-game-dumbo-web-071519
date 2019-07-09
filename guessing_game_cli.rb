@@ -11,7 +11,10 @@ def get_user_input
   gets.chomp
 end
 
-def generate_response(input, number)
+def run
+  prompt_user
+  number = generate_number
+  input = get_user_input
   if input == number
     puts "You guessed the correct number!"
   elsif input == "exit"
@@ -19,11 +22,4 @@ def generate_response(input, number)
   else
     puts "Sorry! The computer guessed #{number}"
   end
-end
-
-def run
-  prompt_user
-  number = generate_number
-  guess = get_user_input
-  generate_response(guess, number)
 end
