@@ -3,10 +3,14 @@
 def promt_user
   puts "Guess a number between 1 and 6"
 end
-def run_guessing_game
-  number = rand(6) + 1
+
+promt_user
+
+number = rand(6) + 1
+def run_guessing_game(number)
+  #number = rand(6) + 1
   
-  promt_user
+ 
   input = gets.chomp
   
   if input == number
