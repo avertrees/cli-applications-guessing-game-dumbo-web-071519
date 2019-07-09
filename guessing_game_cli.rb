@@ -12,8 +12,8 @@ def get_user_input
 end
 
 def run
-  prompt_user
   number = generate_number
+  promp_user
   input = get_user_input
   if input == number
     puts "You guessed the correct number!"
